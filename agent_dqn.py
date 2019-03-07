@@ -22,10 +22,10 @@ def MakeDir(path):
 lab = False
 load_model = False
 train = True
-test_display = True
-test_write_video = False
-path_work_dir = "~/rl_3d/"
-vizdoom_path = "~/ViZDoom/"
+test_display = False
+test_write_video = True
+path_work_dir = "rl_3d/"
+vizdoom_path = "ViZDoom/"
 vizdoom_scenario = vizdoom_path + "scenarios/simpler_basic.wad"
 
 # Lab parameters.
@@ -141,7 +141,7 @@ class ReplayMemory(object):
 
     def Get(self, sample_size):
 
-        idx = random.sample(xrange(0, self.size-2), sample_size)
+        idx = random.sample(range(0, self.size-2), sample_size)
         idx2 = []
         for i in idx:
             idx2.append(i + 1)
@@ -261,7 +261,7 @@ class Agent(object):
         start_time = time.time()
         train_scores = []
         env.Reset()
-        for step in xrange(1, step_num+1):
+        for step in range(1, step_num+1):
             self.Step(step)
             if (not env.IsRunning()):
                 train_scores.append(self.rewards)
@@ -300,7 +300,7 @@ def Test(agent):
         state = Preprocess(state_raw)
         action = agent.GetAction(state)
 
-        for _ in xrange(frame_repeat):
+        for _ in range(frame_repeat):
             # Display.
             if (test_display):
                 cv2.imshow("frame-test", state_raw)
