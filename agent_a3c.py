@@ -19,7 +19,7 @@ def MakeDir(path):
 lab = False
 load_model = False
 train = True
-test_display = True
+test_display = False
 test_write_video = True
 path_work_dir = "rl_3d/"
 vizdoom_path = "ViZDoom/"
