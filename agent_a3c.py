@@ -236,7 +236,7 @@ class Worker(object):
 
     # Calculate discounted returns.
     def Discount(self, x, gamma):
-        for idx in reversed(xrange(len(x) - 1)):
+        for idx in reversed(range(len(x) - 1)):
             x[idx] += x[idx + 1] * gamma
         return x
 
@@ -352,7 +352,7 @@ class Agent(object):
                 trainer = tf.train.RMSPropOptimizer(learning_rate)
 
                 workers = []
-                for i in xrange(num_workers):
+                for i in range(num_workers):
                     workers.append(Worker(i, env.NumActions(), trainer, model_name))
 
         saver = tf.train.Saver(max_to_keep=100)
@@ -401,7 +401,7 @@ def Test(agent):
         state = Preprocess(state_raw)
         action = agent.Act(state)
 
-        for _ in xrange(frame_repeat):
+        for _ in range(frame_repeat):
             if (test_display):
                 cv2.imshow("frame-test", state_raw)
                 cv2.waitKey(20)
