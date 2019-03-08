@@ -26,11 +26,11 @@ class EnvVizDoom(object):
         #self.game.add_available_game_variable(GameVariable.AMMO2)
         #self.game.add_available_game_variable(GameVariable.POSITION_X)
         #self.game.add_available_game_variable(GameVariable.POSITION_Y)
-        self.game.set_episode_timeout(300)
+        self.game.set_episode_timeout(2100)
         self.game.set_episode_start_time(14) # 10 20
         self.game.set_window_visible(False)
         self.game.set_sound_enabled(False)
-        self.game.set_living_reward(-1)
+        self.game.set_living_reward(-0.0001)
         self.game.set_mode(Mode.PLAYER)
         self.game.init()
         print("Doom initialized.")
