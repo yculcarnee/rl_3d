@@ -1,0 +1,52 @@
+base file settings:
+neural network:
+    learning_rate = 0.00025
+    num_workers = 3
+    t_max = 30
+    frame_repeat =  4 
+    gamma = 0.99
+    step_num = int(2.5e5)
+    save_each = 0.01 * step_num
+    step_load = 100
+    entropy_beta = 0.01
+    grad_norm_clip = 40.0
+
+vizdoom:
+    actions = move_left, move_right, attack
+    living_reward = -0.0001
+    
+performance: tl;dr - trash
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    Total reward: -0.2099999999999932
+    
+#1
+modifications: add move_forward and remove attack actions
+  
