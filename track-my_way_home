@@ -85,4 +85,34 @@ performance: TL;DR - better? well yes, but actually no; only collected goal twic
 #2
 modifications: add turn_left and turn_right as well
 
-performance - 
+performance - TL:DR - improvement
+        Total reward: -0.2099999999999932
+        Total reward: 0.8853999999999977 (yay)
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.891499999999998 (yay)
+        Total reward: -0.2099999999999932
+        Total reward: 0.9937 (yay)
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.9383999999999992 (yay)
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.930099999999999 (yay)
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.9611999999999999 (yay)
+        Total reward: 0.9958 (yay)
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
