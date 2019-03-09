@@ -23,6 +23,8 @@ class EnvVizDoom(object):
         self.game.add_available_button(Button.MOVE_LEFT)
         self.game.add_available_button(Button.MOVE_RIGHT)
         self.game.add_available_button(Button.MOVE_FORWARD)
+        self.game.add_available_button(Button.TURN_LEFT)
+        self.game.add_available_button(Button.TURN_RIGHT)
         #self.game.add_available_button(Button.ATTACK)
         #self.game.add_available_game_variable(GameVariable.AMMO2)
         #self.game.add_available_game_variable(GameVariable.POSITION_X)
