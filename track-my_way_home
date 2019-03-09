@@ -116,3 +116,8 @@ performance - TL:DR - improvement
         Total reward: -0.2099999999999932
         Total reward: -0.2099999999999932
         Total reward: -0.2099999999999932
+        
+#3 
+modifications: add game variables positon_x and position_y as well
+
+performance: 
