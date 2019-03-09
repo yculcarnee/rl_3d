@@ -49,4 +49,40 @@ performance: tl;dr - trash
     
 #1
 modifications: add move_forward and remove attack actions
-  
+
+performance: TL;DR - better? well yes, but actually no; only collected goal twice
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.9538999999999997
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.9859
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        
+#2
+modifications: add turn_left and turn_right as well
+
+performance - 
