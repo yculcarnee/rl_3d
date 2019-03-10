@@ -32,7 +32,7 @@ vizdoom_scenario = vizdoom_path + "scenarios/my_way_home.wad"
 if (lab):
     from env_lab import EnvLab
 
-    learning_rate = 0.00025  # 0.001
+    learning_rate = 0.0001  # 0.001
     discount_factor = 0.99
     step_num = int(5e5)  # int(1e6)
     replay_memory_size = int(1e6)
