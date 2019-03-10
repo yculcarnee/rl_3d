@@ -1,0 +1,54 @@
+baseline parameters
+neural netowrk -
+    learning_rate = 0.00025
+    discount_factor = 0.99
+    step_num = int(5e4)
+    replay_memory_size = int(1e5)
+    replay_memory_batch_size = 64
+    
+    frame_repeat = 10
+    channels = 3
+    resolution = (40, 40) + (channels,)
+
+    start_eps = 1.0
+    end_eps = 0.1
+    eps_decay_iter = 0.33 * step_num
+
+    save_each = 0.01 * step_num
+    step_load = 100
+    
+vizdoom - 
+    available buttons - move left, right, forward, turn left, right
+    living reward - 0.0001
+    
+performance - tl;dr collected only once, that too when it was placed literally next to the vest and still it struggled smh 
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.7917000000000066
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
