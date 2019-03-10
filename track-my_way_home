@@ -120,34 +120,75 @@ performance - TL:DR - improvement
 #3 
 modifications: add game variables positon_x and position_y as well
 
-performance: 
-Total reward: 0.9155999999999986
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: 0.8600999999999991
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: 0.9885
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: 0.9408999999999994
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
-Total reward: -0.2099999999999932
+performance: not good 
+        Total reward: 0.9155999999999986
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.8600999999999991
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.9885
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.9408999999999994
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        
+#4
+modifications - changed scenario to locha_home.wad (no random respawn my way home)
+
+performance - trash
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.9044999999999983
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        
+#5
+modifications - remove position_x and position_y
+
+performance
+     
