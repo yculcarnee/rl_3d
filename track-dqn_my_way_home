@@ -231,8 +231,46 @@ performance - this aint it chief
         Total reward: -0.2099999999999932
         
 #6
-modifications - change scenario to locha_home.wad (non random spawn my way home)
+modifications - change scenario to locha_home.wad (non random spawn my way home) learning rate 0.0003
+
+performance - trash
+
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        
+#7
+modifications - scenario locha_home.wad, learning rate 0.00025
 
 performance
+
+
 
     
