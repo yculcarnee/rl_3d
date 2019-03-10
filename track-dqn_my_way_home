@@ -126,4 +126,39 @@ performance - trash
 #3
 modifications - set learning rate to 0.0005
 
+performance - trashh
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.8859999999999978
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: 0.8232000000000032
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+        Total reward: -0.2099999999999932
+
+#4
+modifications - set learning rate 0.0004
+
 performance
