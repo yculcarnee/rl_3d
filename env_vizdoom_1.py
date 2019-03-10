@@ -27,8 +27,8 @@ class EnvVizDoom(object):
         self.game.add_available_button(Button.TURN_RIGHT)
         #self.game.add_available_button(Button.ATTACK)
         #self.game.add_available_game_variable(GameVariable.AMMO2)
-        self.game.add_available_game_variable(GameVariable.POSITION_X)
-        self.game.add_available_game_variable(GameVariable.POSITION_Y)
+        #self.game.add_available_game_variable(GameVariable.POSITION_X)
+        #self.game.add_available_game_variable(GameVariable.POSITION_Y)
         self.game.set_episode_timeout(2100)
         self.game.set_episode_start_time(14) # 10 20
         self.game.set_window_visible(False)
