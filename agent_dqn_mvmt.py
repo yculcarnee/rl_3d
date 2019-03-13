@@ -53,7 +53,7 @@ if (lab):
 
 # Vizdoom parameters.
 if (not lab):
-    from env_vizdoom_dqn_mvmt import EnvVizDoom
+    from env_vizdoom_mvmt import EnvVizDoom
 
     learning_rate = 0.00025
     discount_factor = 0.99
