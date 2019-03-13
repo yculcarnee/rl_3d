@@ -30,7 +30,7 @@ if (lab):
 
     model_path = path_work_dir + "model_lab_a3c/"
 else:
-    from env_vizdoom import EnvVizDoom
+    from env_vizdoom_1 import EnvVizDoom
 
     model_path = path_work_dir + "model_vizdoom_a3c/"
 
