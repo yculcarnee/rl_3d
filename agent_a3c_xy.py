@@ -405,10 +405,7 @@ def Test(agent):
             ep_counter+=1
             reward_total = 0
             num_episodes -= 1
-
-        posX.append(env.positionX())
-        posY.append(env.positionY())
-            
+    
         state_raw = env.Observation()
 
         state = Preprocess(state_raw)
@@ -429,7 +426,10 @@ def Test(agent):
                 break
 
             state_raw = env.Observation()
-    
+            
+            posX.append(env.positionX())
+            posY.append(env.positionY())
+        
     print(reward_list)
     print(ep_list)
     print(posX)
