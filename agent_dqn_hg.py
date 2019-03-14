@@ -26,7 +26,7 @@ test_display = False
 test_write_video = True
 path_work_dir = "rl_3d/"
 vizdoom_path = "ViZDoom/"
-vizdoom_scenario = vizdoom_path + "scenarios/health_gathering.wad"
+vizdoom_scenario = vizdoom_path + "scenarios/health_gathering_supreme.wad"
 
 # Lab parameters.
 if (lab):
