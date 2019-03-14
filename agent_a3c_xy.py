@@ -399,8 +399,6 @@ def Test(agent):
         if (not env.IsRunning()):
             env.Reset()
             agent.Reset()
-            posX.append(env.positionX())
-            posY.append(env.positionY())
             print("Total reward: {}".format(reward_total))
             reward_list.append(reward_total)
             ep_list.append(ep_counter)
@@ -408,6 +406,9 @@ def Test(agent):
             reward_total = 0
             num_episodes -= 1
 
+        posX.append(env.positionX())
+        posY.append(env.positionY())
+            
         state_raw = env.Observation()
 
         state = Preprocess(state_raw)
