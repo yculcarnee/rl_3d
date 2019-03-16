@@ -24,7 +24,7 @@ test_display = False
 test_write_video = True
 path_work_dir = "rl_3d/"
 vizdoom_path = "ViZDoom/"
-vizdoom_scenario = vizdoom_path + "scenarios/dumbell_1.wad"
+vizdoom_scenario = vizdoom_path + "scenarios/sabsesasta1.wad"
 
 if (lab):
     from env_lab import EnvLab
