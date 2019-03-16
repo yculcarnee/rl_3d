@@ -390,15 +390,22 @@ def Test(agent):
     posX = []
     posY = []
     
+    posX.append('%')
+    posY.append('%')
+   
+    i = 0
+      
     ep_counter = 1
     reward_list = []
     ep_list = []
     reward_total = 0
-    num_episodes = 30
+    num_episodes = 10
     while (num_episodes != 0):
         if (not env.IsRunning()):
             env.Reset()
             agent.Reset()
+            posX.append('%')
+            posY.append('%')
             print("Total reward: {}".format(reward_total))
             reward_list.append(reward_total)
             ep_list.append(ep_counter)
@@ -427,8 +434,10 @@ def Test(agent):
 
             state_raw = env.Observation()
             
-            posX.append(env.positionX())
-            posY.append(env.positionY())
+            if(i%100 == 0):
+               posX.append(env.positionX())
+               posY.append(env.positionY())
+            i+=1
         
     print(reward_list)
     print(ep_list)
