@@ -385,7 +385,7 @@ def Test(agent):
         size = (640, 480)
         fps = 30.0
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
-        out_video = cv2.VideoWriter("drive/a3c_ss.avi", fourcc, fps, size)
+        out_video = cv2.VideoWriter("drive/a3c_ss1.avi", fourcc, fps, size)
          
     posX = []
     posY = []
