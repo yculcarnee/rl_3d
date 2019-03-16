@@ -24,7 +24,7 @@ test_display = False
 test_write_video = True
 path_work_dir = "rl_3d/"
 vizdoom_path = "ViZDoom/"
-vizdoom_scenario = vizdoom_path + "scenarios/sabsesasta1_1.wad"
+vizdoom_scenario = vizdoom_path + "scenarios/dumbell.wad"
 
 if (lab):
     from env_lab import EnvLab
@@ -397,7 +397,7 @@ def Test(agent):
     reward_list = []
     ep_list = []
     reward_total = 0
-    num_episodes = 30
+    num_episodes = 10
     while (num_episodes != 0):
         if (not env.IsRunning()):
             env.Reset()
