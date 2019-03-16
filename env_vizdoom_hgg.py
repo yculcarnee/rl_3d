@@ -63,3 +63,10 @@ class EnvVizDoom(object):
 
     def MapActions(self, action_raw):
         return action_raw
+    
+    def positionX(self):
+        return self.game.get_state().game_variables[0]
+        
+    def positionY(self):
+        return self.game.get_state().game_variables[1]
+        
