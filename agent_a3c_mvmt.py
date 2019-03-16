@@ -386,6 +386,12 @@ def Test(agent):
         fps = 30.0
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
         out_video = cv2.VideoWriter(path_work_dir + "test.avi", fourcc, fps, size)
+         
+    posX = []
+    posY = []
+    
+    posX.append('%')
+    posY.append('%')
 
     ep_counter = 1
     reward_list = []
@@ -396,6 +402,8 @@ def Test(agent):
         if (not env.IsRunning()):
             env.Reset()
             agent.Reset()
+            posX.append('%')
+            posY.append('%')
             print("Total reward: {}".format(reward_total))
             reward_list.append(reward_total)
             ep_list.append(ep_counter)
@@ -423,8 +431,14 @@ def Test(agent):
                 break
 
             state_raw = env.Observation()
-    
+            
+            posX.append(env.positionX())
+            posY.append(env.positionY())
+
     print(reward_list)
+    print(ep_list)
+    print(posX)
+    print(posY)
     
 
 if __name__ == '__main__':
