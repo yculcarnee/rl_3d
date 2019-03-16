@@ -284,7 +284,7 @@ def Test(agent):
         size = (640, 480)
         fps = 30.0 #/ frame_repeat
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
-        out_video = cv2.VideoWriter(path_work_dir + "test.avi", fourcc, fps, size)
+        out_video = cv2.VideoWriter("drive/test.avi", fourcc, fps, size)
 
     reward_total = 0
     num_episodes = 30
