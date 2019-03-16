@@ -53,7 +53,7 @@ if (lab):
 
 # Vizdoom parameters.
 if (not lab):
-    from env_vizdoom_mvmt import EnvVizDoom
+    from env_vizdoom_dqn_mvmt import EnvVizDoom
 
     learning_rate = 0.00025
     discount_factor = 0.99
@@ -285,6 +285,12 @@ def Test(agent):
         fps = 30.0 #/ frame_repeat
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
         out_video = cv2.VideoWriter(path_work_dir + "test.avi", fourcc, fps, size)
+        
+    posX = []
+    posY = []
+    
+    posX.append('%')
+    posY.append('%')
 
     reward_total = 0
     num_episodes = 30
@@ -294,6 +300,8 @@ def Test(agent):
     while (num_episodes != 0):
         if (not env.IsRunning()):
             env.Reset()
+            posX.append('%')
+            posY.append('%')
             print("Total reward: {}".format(reward_total))
             reward_list.append(reward_total)
             ep_list.append(ep_counter)
@@ -322,9 +330,14 @@ def Test(agent):
                 break
 
             state_raw = env.Observation()
+            
+            posX.append(env.positionX())
+            posY.append(env.positionY())
 
     print(reward_list)
     print(ep_list)
+    print(posX)
+    print(posY)
 
 
 if __name__ == '__main__':
