@@ -26,7 +26,7 @@ test_display = False
 test_write_video = True
 path_work_dir = "rl_3d/"
 vizdoom_path = "ViZDoom/"
-vizdoom_scenario = vizdoom_path + "scenarios/sabsesasta2.wad"
+vizdoom_scenario = vizdoom_path + "scenarios/dumbell.wad"
 
 # Lab parameters.
 if (lab):
@@ -293,7 +293,7 @@ def Test(agent):
     posY.append('%')
 
     reward_total = 0
-    num_episodes = 30
+    num_episodes = 10
     ep_counter = 1
     reward_list = []
     ep_list = []
