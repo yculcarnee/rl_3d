@@ -434,10 +434,8 @@ def Test(agent):
 
             state_raw = env.Observation()
             
-            if(i%10 == 0):
-               posX.append(env.positionX())
-               posY.append(env.positionY())
-            i+=1
+            posX.append(env.positionX())
+            posY.append(env.positionY())
         
     print(reward_list)
     print(ep_list)
