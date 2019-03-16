@@ -434,7 +434,7 @@ def Test(agent):
 
             state_raw = env.Observation()
             
-            if(i%100 == 0):
+            if(i%10 == 0):
                posX.append(env.positionX())
                posY.append(env.positionY())
             i+=1
