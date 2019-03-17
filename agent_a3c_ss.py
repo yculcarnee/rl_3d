@@ -37,7 +37,7 @@ else:
 
 learning_rate = 0.00025
 device = "/cpu:0"
-num_workers = 3
+num_workers = 8
 t_max = 30
 frame_repeat =  4 #10  # 4
 gamma = 0.99
