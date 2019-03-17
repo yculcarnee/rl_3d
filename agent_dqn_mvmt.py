@@ -58,7 +58,7 @@ if (not lab):
     learning_rate = 0.00025
     discount_factor = 0.99
     step_num = int(5e5)
-    replay_memory_size = int(1e6)
+    replay_memory_size = int(1e5)
     replay_memory_batch_size = 64
 
     frame_repeat = 10
