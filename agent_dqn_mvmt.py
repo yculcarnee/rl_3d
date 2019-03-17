@@ -55,7 +55,7 @@ if (lab):
 if (not lab):
     from env_vizdoom_dqn_mvmt import EnvVizDoom
 
-    learning_rate = 0.0005
+    learning_rate = 0.00025
     discount_factor = 0.99
     step_num = int(5e5)
     replay_memory_size = int(1e6)
@@ -293,7 +293,7 @@ def Test(agent):
     posY.append('%')
 
     reward_total = 0
-    num_episodes = 10
+    num_episodes = 30
     ep_counter = 1
     reward_list = []
     ep_list = []
