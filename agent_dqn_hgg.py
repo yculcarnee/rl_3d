@@ -330,6 +330,9 @@ def Test(agent):
                 break
 
             state_raw = env.Observation()
+            
+            posX.append(env.positionX())
+            posY.append(env.positionY())
 
     print(reward_list)
     print(ep_list)
