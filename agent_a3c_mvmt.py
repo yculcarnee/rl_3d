@@ -37,11 +37,11 @@ else:
 
 learning_rate = 0.00025
 device = "/cpu:0"
-num_workers = 16
+num_workers = 3
 t_max = 30
 frame_repeat =  4 #10  # 4
 gamma = 0.99
-step_num = int(5e5)
+step_num = int(2.5e5)
 save_each = 0.01 * step_num
 step_load = 100
 entropy_beta = 0.01
@@ -397,7 +397,7 @@ def Test(agent):
     reward_list = []
     ep_list = []
     reward_total = 0
-    num_episodes = 10
+    num_episodes = 30
     while (num_episodes != 0):
         if (not env.IsRunning()):
             env.Reset()
