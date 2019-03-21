@@ -381,15 +381,7 @@ class Agent(object):
         return action
 
 def Test(agent):
-    if (test_write_video):
-        size = (640, 480)
-        fps = 30.0
-        fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
-        
-        file_name = ""
-        
-        out_video = cv2.VideoWriter(file_name, fourcc, fps, size)
-
+   
     posX = []
     posY = []
     
@@ -405,9 +397,16 @@ def Test(agent):
     ep_list = []
     reward_total = 0
     num_episodes = 10
-    
-    file_name = "drive/test_" + str(ep_counter) + ".avi"
-    
+   
+    if (test_write_video):
+        size = (640, 480)
+        fps = 30.0
+        fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
+        
+        file_name = "drive/test_" + str(ep_counter) + ".avi"
+        
+        out_video = cv2.VideoWriter(file_name, fourcc, fps, size)
+
     while (num_episodes != 0):
         if (not env.IsRunning()):
             env.Reset()
