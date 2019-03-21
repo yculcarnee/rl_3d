@@ -386,7 +386,7 @@ def Test(agent):
         fps = 30.0
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
         
-        file_name ""
+        file_name = ""
         
         out_video = cv2.VideoWriter(file_name, fourcc, fps, size)
 
