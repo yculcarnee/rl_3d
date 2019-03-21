@@ -18,8 +18,8 @@ def MakeDir(path):
         pass
 
 lab = False
-load_model = False
-train = True
+load_model = True
+train = False
 test_display = False
 test_write_video = True
 path_work_dir = "rl_3d/"
@@ -406,7 +406,7 @@ def Test(agent):
     reward_total = 0
     num_episodes = 10
     
-    file_name = "test_" + str(ep_counter) + ".avi"
+    file_name = "drive/test_" + str(ep_counter) + ".avi"
     
     while (num_episodes != 0):
         if (not env.IsRunning()):
