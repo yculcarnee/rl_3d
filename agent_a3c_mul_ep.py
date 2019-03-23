@@ -431,7 +431,8 @@ def Test(agent):
 
             if (test_write_video):
                 if(ep_done):
-                    file_name = "drive/test1_" + str(ep_counter) + ".avi" 
+                    file_name = "drive/test1_" + str(ep_counter) + ".avi"
+                    ep_done = False 
                 out_video = cv2.VideoWriter(file_name, fourcc, fps, size)  
                 out_video.write(state_raw)
 
