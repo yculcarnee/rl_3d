@@ -33,7 +33,7 @@ if (lab):
 else:
     from env_vizdoom_xy import EnvVizDoom
 
-    model_path = "drive/model_vizdoom_a3c_1/"
+    model_path = "drive/model_vizdoom_a3c/"
 
 learning_rate = 0.00025
 device = "/cpu:0"
