@@ -402,10 +402,11 @@ def Test(agent):
         size = (640, 480)
         fps = 30.0
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
-        
+      
+    def write_video(state_raw, ep_counter):     
         file_name = "drive/test_" + str(ep_counter) + ".avi"
-        
         out_video = cv2.VideoWriter(file_name, fourcc, fps, size)
+        out_video.write(state_raw)
 
     while (num_episodes != 0):
         if (not env.IsRunning()):
@@ -431,7 +432,7 @@ def Test(agent):
                 cv2.waitKey(20)
 
             if (test_write_video):
-                out_video.write(state_raw)
+                write_video(state_raw, ep_counter)
 
             reward = env.Act(action, 1)
             reward_total += reward
