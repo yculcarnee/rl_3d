@@ -33,7 +33,7 @@ if (lab):
 else:
     from env_vizdoom_xy import EnvVizDoom
 
-    model_path = "drive/model_vizdoom_a3c/"
+    model_path = "drive/model_vizdoom_a3c_1/"
 
 learning_rate = 0.00025
 device = "/cpu:0"
@@ -404,7 +404,7 @@ def Test(agent):
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
       
     def write_video(state_raw, ep_counter):     
-        file_name = "drive/test_" + str(ep_counter) + ".avi"
+        file_name = "drive/test1_" + str(ep_counter) + ".avi"
         out_video = cv2.VideoWriter(file_name, fourcc, fps, size)
         out_video.write(state_raw)
 
