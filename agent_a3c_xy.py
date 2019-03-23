@@ -24,7 +24,7 @@ test_display = False
 test_write_video = True
 path_work_dir = "rl_3d/"
 vizdoom_path = "ViZDoom/"
-vizdoom_scenario = vizdoom_path + "scenarios/dumbell.wad"
+vizdoom_scenario = vizdoom_path + "scenarios/y.wad"
 
 if (lab):
     from env_lab import EnvLab
@@ -33,7 +33,7 @@ if (lab):
 else:
     from env_vizdoom_xy import EnvVizDoom
 
-    model_path = path_work_dir + "model_vizdoom_a3c/"
+    model_path = "drive/model_vizdoom_a3c_y/"
 
 learning_rate = 0.00025
 device = "/cpu:0"
@@ -385,7 +385,7 @@ def Test(agent):
         size = (640, 480)
         fps = 30.0
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
-        out_video = cv2.VideoWriter(path_work_dir + "test.avi", fourcc, fps, size)
+        out_video = cv2.VideoWriter("drive/test_y.avi", fourcc, fps, size)
 
     posX = []
     posY = []
