@@ -381,6 +381,9 @@ class Agent(object):
         return action
 
 def write_video(state_raw, ep_counter):
+    size = (640, 480)
+    fps = 30.0
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID') 
     if(ep_counter == 1):
         out_video = cv2.VideoWriter("drive/testt_1.avi", fourcc, fps, size)
     if(ep_counter == 2):
