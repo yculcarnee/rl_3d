@@ -466,6 +466,7 @@ def Test(agent):
                 cv2.waitKey(20)
 
             if (test_write_video):
+                print(ep_counter)
                 out_video.write(state_raw)
                 #write_video(state_raw, ep_counter)
                 
