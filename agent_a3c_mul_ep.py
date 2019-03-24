@@ -384,7 +384,7 @@ def write_video(state_raw):#, ep_counter):
     size = (640, 480)
     fps = 30.0
     fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID') 
-    out_video = cv2.VideoWriter("drive/teest.avi", fourcc, fps, size)  
+    #out_video = cv2.VideoWriter("drive/teest.avi", fourcc, fps, size)  
     out_video.write(state_raw)
     """out_video_1 = cv2.VideoWriter("drive/testt_1.avi", fourcc, fps, size)
     out_video_2 = cv2.VideoWriter("drive/testt_2.avi", fourcc, fps, size)
@@ -438,11 +438,11 @@ def Test(agent):
    
     file_name = "drive/test1.avi" 
    
-    #if (test_write_video):
-        #size = (640, 480)
-        #fps = 30.0
-        #fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID') 
-        #out_video = cv2.VideoWriter("drive/teest.avi", fourcc, fps, size)
+    if (test_write_video):
+        size = (640, 480)
+        fps = 30.0
+        fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID') 
+        out_video = cv2.VideoWriter("drive/teest.avi", fourcc, fps, size)
 
     while (num_episodes != 0):
         if (not env.IsRunning()):
