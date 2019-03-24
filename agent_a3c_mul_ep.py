@@ -380,6 +380,30 @@ class Agent(object):
         action, _ = self.global_net.GetAction(self.session, state)
         return action
 
+def write_video(state_raw, ep_counter):
+    if(ep_counter == 1):
+        out_video = cv2.VideoWriter("drive/testt_1.avi", fourcc, fps, size)
+    if(ep_counter == 2):
+        out_video = cv2.VideoWriter("drive/testt_2.avi", fourcc, fps, size)
+    if(ep_counter == 3):
+        out_video = cv2.VideoWriter("drive/testt_3.avi", fourcc, fps, size)
+    if(ep_counter == 4):
+        out_video = cv2.VideoWriter("drive/testt_4.avi", fourcc, fps, size)
+    if(ep_counter == 5):
+        out_video = cv2.VideoWriter("drive/testt_5.avi", fourcc, fps, size)
+    if(ep_counter == 6):
+        out_video = cv2.VideoWriter("drive/testt_6.avi", fourcc, fps, size)
+    if(ep_counter == 7):
+        out_video = cv2.VideoWriter("drive/testt_7.avi", fourcc, fps, size)
+    if(ep_counter == 8):
+        out_video = cv2.VideoWriter("drive/testt_8.avi", fourcc, fps, size)
+    if(ep_counter == 9):
+        out_video = cv2.VideoWriter("drive/testt_9.avi", fourcc, fps, size)
+    if(ep_counter == 10):
+        out_video = cv2.VideoWriter("drive/testt_10.avi", fourcc, fps, size) 
+    out_video.write(state_raw)
+
+   
 def Test(agent):
    
     posX = []
@@ -404,7 +428,6 @@ def Test(agent):
         size = (640, 480)
         fps = 30.0
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID') 
-        out_video = cv2.VideoWriter("drive/testt_" + str(ep_counter) + ".avi", fourcc, fps, size) 
 
     while (num_episodes != 0):
         if (not env.IsRunning()):
@@ -430,8 +453,8 @@ def Test(agent):
                 cv2.waitKey(20)
 
             if (test_write_video):
-                out_video.write(state_raw)
-
+                write_video(state_raw, ep_counter)
+                
             reward = env.Act(action, 1)
             reward_total += reward
 
