@@ -380,7 +380,7 @@ class Agent(object):
         action, _ = self.global_net.GetAction(self.session, state)
         return action
 
-def write_video(state_raw, ep_counter):
+"""def write_video(state_raw, ep_counter):
     size = (640, 480)
     fps = 30.0
     fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID') 
@@ -414,7 +414,7 @@ def write_video(state_raw, ep_counter):
     if(ep_counter == 9):
         out_video_9.write(state_raw)
     if(ep_counter == 10):
-        out_video_10.write(state_raw)
+        out_video_10.write(state_raw)"""
       
 def Test(agent):
    
@@ -440,6 +440,7 @@ def Test(agent):
         size = (640, 480)
         fps = 30.0
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID') 
+        out_video = cv2.VideoWriter("drive/teest.avi", fourcc, fps, size)
 
     while (num_episodes != 0):
         if (not env.IsRunning()):
@@ -465,7 +466,8 @@ def Test(agent):
                 cv2.waitKey(20)
 
             if (test_write_video):
-                write_video(state_raw, ep_counter)
+                out_video.write(state_raw)
+                #write_video(state_raw, ep_counter)
                 
             reward = env.Act(action, 1)
             reward_total += reward
