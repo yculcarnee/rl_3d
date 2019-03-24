@@ -438,11 +438,11 @@ def Test(agent):
    
     file_name = "drive/test1.avi" 
    
-    if (test_write_video):
-        size = (640, 480)
-        fps = 30.0
-        fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID') 
-        out_video = cv2.VideoWriter("drive/teest.avi", fourcc, fps, size)
+    #if (test_write_video):
+        #size = (640, 480)
+        #fps = 30.0
+        #fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID') 
+        #out_video = cv2.VideoWriter("drive/teest.avi", fourcc, fps, size)
 
     while (num_episodes != 0):
         if (not env.IsRunning()):
