@@ -384,29 +384,38 @@ def write_video(state_raw, ep_counter):
     size = (640, 480)
     fps = 30.0
     fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID') 
-    if(ep_counter == 1):
-        out_video = cv2.VideoWriter("drive/testt_1.avi", fourcc, fps, size)
-    if(ep_counter == 2):
-        out_video = cv2.VideoWriter("drive/testt_2.avi", fourcc, fps, size)
-    if(ep_counter == 3):
-        out_video = cv2.VideoWriter("drive/testt_3.avi", fourcc, fps, size)
-    if(ep_counter == 4):
-        out_video = cv2.VideoWriter("drive/testt_4.avi", fourcc, fps, size)
-    if(ep_counter == 5):
-        out_video = cv2.VideoWriter("drive/testt_5.avi", fourcc, fps, size)
-    if(ep_counter == 6):
-        out_video = cv2.VideoWriter("drive/testt_6.avi", fourcc, fps, size)
-    if(ep_counter == 7):
-        out_video = cv2.VideoWriter("drive/testt_7.avi", fourcc, fps, size)
-    if(ep_counter == 8):
-        out_video = cv2.VideoWriter("drive/testt_8.avi", fourcc, fps, size)
-    if(ep_counter == 9):
-        out_video = cv2.VideoWriter("drive/testt_9.avi", fourcc, fps, size)
-    if(ep_counter == 10):
-        out_video = cv2.VideoWriter("drive/testt_10.avi", fourcc, fps, size) 
-    out_video.write(state_raw)
-
+    out_video_1 = cv2.VideoWriter("drive/testt_1.avi", fourcc, fps, size)
+    out_video_2 = cv2.VideoWriter("drive/testt_2.avi", fourcc, fps, size)
+    out_video_3 = cv2.VideoWriter("drive/testt_3.avi", fourcc, fps, size)
+    out_video_4 = cv2.VideoWriter("drive/testt_4.avi", fourcc, fps, size)
+    out_video_5 = cv2.VideoWriter("drive/testt_5.avi", fourcc, fps, size)
+    out_video_6 = cv2.VideoWriter("drive/testt_6.avi", fourcc, fps, size)
+    out_video_7 = cv2.VideoWriter("drive/testt_7.avi", fourcc, fps, size)
+    out_video_8 = cv2.VideoWriter("drive/testt_8.avi", fourcc, fps, size)
+    out_video_9 = cv2.VideoWriter("drive/testt_9.avi", fourcc, fps, size)
+    out_video_10 = cv2.VideoWriter("drive/testt_10.avi", fourcc, fps, size)
    
+    if(ep_counter == 1):
+        out_video_1.write(state_raw)    
+    if(ep_counter == 2):
+        out_video_2.write(state_raw)    
+    if(ep_counter == 3):
+        out_video_3.write(state_raw)
+    if(ep_counter == 4):
+        out_video_4.write(state_raw)
+    if(ep_counter == 5):
+        out_video_5.write(state_raw)
+    if(ep_counter == 6):
+        out_video_6.write(state_raw)
+    if(ep_counter == 7):
+        out_video_7.write(state_raw)
+    if(ep_counter == 8):
+        out_video_8.write(state_raw)    
+    if(ep_counter == 9):
+        out_video_9.write(state_raw)
+    if(ep_counter == 10):
+        out_video_10.write(state_raw)
+      
 def Test(agent):
    
     posX = []
