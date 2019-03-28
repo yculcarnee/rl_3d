@@ -24,7 +24,7 @@ test_display = False
 test_write_video = True
 path_work_dir = "rl_3d/"
 vizdoom_path = "ViZDoom/"
-vizdoom_scenario = vizdoom_path + "scenarios/sabsesasta2.wad"
+vizdoom_scenario = vizdoom_path + "scenarios/sabsesasta1.wad"
 
 if (lab):
     from env_lab import EnvLab
@@ -34,7 +34,7 @@ else:
     from env_vizdoom_xy import EnvVizDoom
 
     #CHANGE MODEL FILE PATH NAME HERE
-    model_path = "drive/model_vizdoom_a3c_ss2/"
+    model_path = "drive/model_vizdoom_a3c_ss1/"
 
 learning_rate = 0.00025
 device = "/cpu:0"
@@ -445,16 +445,16 @@ def Test(agent):
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID') 
         #out_video = cv2.VideoWriter("drive/teest.avi", fourcc, fps, size)
         #CHANGE VIDEO FILE NAME HERE 
-        out_video_1 = cv2.VideoWriter("drive/testt_a3c_ss2_1.avi", fourcc, fps, size)
-        out_video_2 = cv2.VideoWriter("drive/testt_a3c_ss2_2.avi", fourcc, fps, size)
-        out_video_3 = cv2.VideoWriter("drive/testt_a3c_ss2_3.avi", fourcc, fps, size)
-        out_video_4 = cv2.VideoWriter("drive/testt_a3c_ss2_4.avi", fourcc, fps, size)
-        out_video_5 = cv2.VideoWriter("drive/testt_a3c_ss2_5.avi", fourcc, fps, size)
-        out_video_6 = cv2.VideoWriter("drive/testt_a3c_ss2_6.avi", fourcc, fps, size)
-        out_video_7 = cv2.VideoWriter("drive/testt_a3c_ss2_7.avi", fourcc, fps, size)
-        out_video_8 = cv2.VideoWriter("drive/testt_a3c_ss2_8.avi", fourcc, fps, size)
-        out_video_9 = cv2.VideoWriter("drive/testt_a3c_ss2_9.avi", fourcc, fps, size)
-        out_video_10 = cv2.VideoWriter("drive/testt_a3c_ss2_10.avi", fourcc, fps, size) 
+        out_video_1 = cv2.VideoWriter("drive/testt_a3c_ss1_1.avi", fourcc, fps, size)
+        out_video_2 = cv2.VideoWriter("drive/testt_a3c_ss1_2.avi", fourcc, fps, size)
+        out_video_3 = cv2.VideoWriter("drive/testt_a3c_ss1_3.avi", fourcc, fps, size)
+        out_video_4 = cv2.VideoWriter("drive/testt_a3c_ss1_4.avi", fourcc, fps, size)
+        out_video_5 = cv2.VideoWriter("drive/testt_a3c_ss1_5.avi", fourcc, fps, size)
+        out_video_6 = cv2.VideoWriter("drive/testt_a3c_ss1_6.avi", fourcc, fps, size)
+        out_video_7 = cv2.VideoWriter("drive/testt_a3c_ss1_7.avi", fourcc, fps, size)
+        out_video_8 = cv2.VideoWriter("drive/testt_a3c_ss1_8.avi", fourcc, fps, size)
+        out_video_9 = cv2.VideoWriter("drive/testt_a3c_ss1_9.avi", fourcc, fps, size)
+        out_video_10 = cv2.VideoWriter("drive/testt_a3c_ss1_10.avi", fourcc, fps, size) 
 
     while (num_episodes != 0):
         if (not env.IsRunning()):
