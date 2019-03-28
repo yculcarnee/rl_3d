@@ -295,7 +295,7 @@ def Test(agent):
     reward_list = []
     ep_list = []
     
-     if (test_write_video):
+    if (test_write_video):
         size = (640, 480)
         fps = 30.0 #/ frame_repeat
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
