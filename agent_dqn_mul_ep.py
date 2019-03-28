@@ -299,6 +299,7 @@ def Test(agent):
         size = (640, 480)
         fps = 30.0 #/ frame_repeat
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
+        #CHANGE VIDEO FILE NAME HERE
         out_video_1 = cv2.VideoWriter("drive/testt_dqn_dumbell_1.avi", fourcc, fps, size)
         out_video_2 = cv2.VideoWriter("drive/testt_dqn_dumbell_2.avi", fourcc, fps, size)
         out_video_3 = cv2.VideoWriter("drive/testt_dqn_dumbell_3.avi", fourcc, fps, size)
