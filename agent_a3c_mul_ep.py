@@ -18,8 +18,8 @@ def MakeDir(path):
         pass
 
 lab = False
-load_model = True
-train = False
+load_model = False
+train = True
 test_display = False
 test_write_video = True
 path_work_dir = "rl_3d/"
