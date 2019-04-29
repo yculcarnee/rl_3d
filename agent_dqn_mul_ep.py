@@ -26,7 +26,7 @@ test_display = False
 test_write_video = True
 path_work_dir = "rl_3d/"
 vizdoom_path = "ViZDoom/"
-vizdoom_scenario = vizdoom_path + "scenarios/dumbell.wad"
+vizdoom_scenario = vizdoom_path + "scenarios/sabsesasta.wad"
 
 # Lab parameters.
 if (lab):
@@ -70,7 +70,7 @@ if (not lab):
     eps_decay_iter = 0.33 * step_num
 
     #CHANGE MODEL PATH FILE NAME HERE
-    model_path = "drive/model_vizdoom_dqn_dumbell/"
+    model_path = "drive/model_vizdoom_dqn_custom_scenario/"
     
     save_each = 0.01 * step_num
     step_load = 100
@@ -300,16 +300,16 @@ def Test(agent):
         fps = 30.0 #/ frame_repeat
         fourcc = cv2.VideoWriter_fourcc(*'XVID')  # cv2.cv.CV_FOURCC(*'XVID')
         #CHANGE VIDEO FILE NAME HERE
-        out_video_1 = cv2.VideoWriter("drive/testt_dqn_dumbell_1.avi", fourcc, fps, size)
-        out_video_2 = cv2.VideoWriter("drive/testt_dqn_dumbell_2.avi", fourcc, fps, size)
-        out_video_3 = cv2.VideoWriter("drive/testt_dqn_dumbell_3.avi", fourcc, fps, size)
-        out_video_4 = cv2.VideoWriter("drive/testt_dqn_dumbell_4.avi", fourcc, fps, size)
-        out_video_5 = cv2.VideoWriter("drive/testt_dqn_dumbell_5.avi", fourcc, fps, size)
-        out_video_6 = cv2.VideoWriter("drive/testt_dqn_dumbell_6.avi", fourcc, fps, size)
-        out_video_7 = cv2.VideoWriter("drive/testt_dqn_dumbell_7.avi", fourcc, fps, size)
-        out_video_8 = cv2.VideoWriter("drive/testt_dqn_dumbell_8.avi", fourcc, fps, size)
-        out_video_9 = cv2.VideoWriter("drive/testt_dqn_dumbell_9.avi", fourcc, fps, size)
-        out_video_10 = cv2.VideoWriter("drive/testt_dqn_dumbell_10.avi", fourcc, fps, size) 
+        out_video_1 = cv2.VideoWriter("drive/testt_dqn_custom_scenario_1.avi", fourcc, fps, size)
+        out_video_2 = cv2.VideoWriter("drive/testt_dqn_custom_scenario_2.avi", fourcc, fps, size)
+        out_video_3 = cv2.VideoWriter("drive/testt_dqn_custom_scenario_3.avi", fourcc, fps, size)
+        out_video_4 = cv2.VideoWriter("drive/testt_dqn_custom_scenario_4.avi", fourcc, fps, size)
+        out_video_5 = cv2.VideoWriter("drive/testt_dqn_custom_scenario_5.avi", fourcc, fps, size)
+        out_video_6 = cv2.VideoWriter("drive/testt_dqn_custom_scenario_6.avi", fourcc, fps, size)
+        out_video_7 = cv2.VideoWriter("drive/testt_dqn_custom_scenario_7.avi", fourcc, fps, size)
+        out_video_8 = cv2.VideoWriter("drive/testt_dqn_custom_scenario_8.avi", fourcc, fps, size)
+        out_video_9 = cv2.VideoWriter("drive/testt_dqn_custom_scenario_9.avi", fourcc, fps, size)
+        out_video_10 = cv2.VideoWriter("drive/testt_dqn_custom_scenario_10.avi", fourcc, fps, size) 
 
     
     while (num_episodes != 0):
